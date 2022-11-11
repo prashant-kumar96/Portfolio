@@ -3,7 +3,7 @@ import Contact from "../components/Contact/Contact";
 import About from "../components/Content/About";
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header/Header";
-const index = () => {
+const Index = () => {
   const [isToggleActive, setIsToggleActive] = useState(false);
   return (
     <div className="main">
@@ -19,4 +19,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
