@@ -1,0 +1,11 @@
+.footer , .footerreverse{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.footerreverse{
+    background-color: white;
+    color: black;
+}

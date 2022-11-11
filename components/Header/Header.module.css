@@ -1,0 +1,120 @@
+.header
+.container, .headerwhite .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    color: white;
+    width: 99vw;
+    margin: auto;
+    position: fixed;
+    padding: 20px 200px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+.companyLogoDiv h2 {
+    margin: unset;
+}
+
+.headerwhite .container {
+    background-color: rgba(255, 255, 255, 0.603);
+    color: rgba(0, 0, 0, 0.8);
+}
+.companyLogoDiv{
+    width: fit-content;
+}
+
+.companyLogoDiv:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.companyImage{
+    width: 100%;
+    height: 100%;
+}
+
+.link:hover {
+    cursor: pointer;
+    color:blue;
+}
+
+.linkDiv {
+    display: flex;
+    margin-left: auto;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.slider {
+    position: relative;
+    width: 60px;
+    height: 34px;
+    margin-left: 30px;
+    display: inline-block;
+}
+
+.slider input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch {
+    width: 80px;    
+    height: 40px;
+    background-color: grey;
+    border-radius: 20px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: .4s;
+    transition: .4s
+}
+
+.switch::before {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    left: 10px;
+    border-radius: 50px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .switch {
+    background-color: #2196F3;
+  }
+
+input:checked + .switch:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  .tooltip {
+    display: none;
+  
+  }
+
+  .slider:hover .tooltip{
+    display: inline-block;
+    color: red;
+    position: absolute;
+    min-width: 194px;
+    top: 29px;
+    font-size: 13px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 2px 4px;
+    border-radius: 11px;
+    text-align: center;
+  }
+
+  
